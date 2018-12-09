@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule } from '@angular/material';
+import { MatListModule, MatSidenavModule, MatChipsModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +20,9 @@ import { EducationComponent } from './education/education.component';
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
+    MatListModule,
     MatSidenavModule,
+    MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
