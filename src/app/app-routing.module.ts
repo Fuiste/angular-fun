@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { EducationComponent } from './education/education.component';
 import { EmploymentComponent } from './employment/employment.component';
+import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
+  {path: '', component: HomeComponent},
   {path: 'education', component: EducationComponent},
   {path: 'employment', component: EmploymentComponent},
   {path: 'contact', component: ContactComponent}
