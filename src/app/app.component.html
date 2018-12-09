@@ -1,19 +1,24 @@
 <div style="text-align:center">
   <h1>
-    William Pelrine's Resume
+    William Pelrine
   </h1>
 </div>
-<h2>Contents </h2>
-<ul>
-  <li>
-    <h2><a routerLink="/education" routerLinkActive="active">Education</a></h2>
-  </li>
-  <li>
-    <h2><a routerLink="/employment" routerLinkActive="active">Employment</a></h2>
-  </li>
-  <li>
-    <h2><a routerLink="/contact" routerLinkActive="active">Contact Me</a></h2>
-  </li>
-</ul>
-
-<router-outlet></router-outlet>
+<mat-sidenav-container class="resume-container">
+    <mat-sidenav mode="side" opened>
+      <h2>Navigation</h2>
+      <ul>
+        <li>
+          <h2><a routerLink="/education" routerLinkActive="active">Education</a></h2>
+        </li>
+        <li>
+          <h2><a routerLink="/employment" routerLinkActive="active">Employment</a></h2>
+        </li>
+        <li>
+          <h2><a routerLink="/contact" routerLinkActive="active">Contact Me</a></h2>
+        </li>
+      </ul>             
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
