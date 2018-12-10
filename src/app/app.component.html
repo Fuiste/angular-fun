@@ -1,6 +1,6 @@
 <div>
   <mat-sidenav-container class="resume-container">
-      <mat-sidenav mode="side" opened>
+      <mat-sidenav #sidenav mode="side" [(opened)]="opened">
         <mat-nav-list>
           <a mat-list-item routerLink="/" routerLinkActive="active">Home</a>
           <a mat-list-item routerLink="/education" routerLinkActive="active">Education</a>
@@ -9,7 +9,8 @@
         </mat-nav-list>             
       </mat-sidenav>
       <mat-sidenav-content>
-        <h1 style="text-align:center">
+        <button mat-button (click)="sidenav.toggle()">Navigation</button>
+        <h1 class="title" style="text-align:center">
           William Pelrine
         </h1>
         <router-outlet></router-outlet>
